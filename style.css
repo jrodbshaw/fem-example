@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "source sans pro";
+	padding: 0;
+	margin: 0;
+}
+
+/* Display conf */
+.display {
+	background-color: black;
+	color: azure;
+	width: 236px;
+	font-size: 34px;
+	text-align: right;
+	padding-right: 8px;
+	padding-top: 8px;
+}
+
+/* create grid here */
+.grid-container {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(4, 55px);
+	grid-template-rows: repeat(6, 55px);
+}
+
+button {
+	border: none;
+	border-radius: 55px;
+	cursor: pointer;
+}
+
+.item {
+	font-size: 21px;
+	color: azure;
+}
+
+/* wider spanning buttons */
+.zero {
+	grid-column: span 2;
+}
+.clear {
+	grid-column: span 2;
+}
+
+/* orange config */
+.orange {
+	background-color: darkorange;
+}
+.orange:hover {
+	background-color: rgb(255, 204, 143);
+	font-size: 28px;
+}
+.orange:active {
+	background-color: rgb(225, 124, 1);
+	font-size: 28px;
+}
+
+/* grey config */
+.grey {
+	background-color: darkgrey;
+}
+.grey:hover {
+	background-color: rgb(201, 201, 201);
+	font-size: 28px;
+}
+.grey:active {
+	background-color: rgb(133, 133, 133);
+	font-size: 28px;
+}
+
+/* dark-grey conf */
+.dark-grey {
+	background-color: darkslategray;
+}
+.dark-grey:hover {
+	background-color: rgb(82, 138, 138);
+	font-size: 28px;
+}
+.dark-grey:active {
+	background-color: rgb(38, 63, 63);
+	font-size: 28px;
+}
